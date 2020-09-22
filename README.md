@@ -13,12 +13,13 @@
 [Spring文档2](https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/htmlsingle/#boot-features-connect-to-production-database)
 
 ## 工具
-[ git ](https://git-scm.com/download)
+[ git ](https://git-scm.com/download)  
+[Flyway](https://flywaydb.org/getstarted/firststeps/maven)
 
 ## 脚本
 ```sql
 CREATE CACHED TABLE "PUBLIC"."USER"(
-    "ID" INT DEFAULT NOT NULL SEQUENCE ,
+    "ID" int AUTO_INCREMENT PRIMARY KEY NOT NULL,
     "ACCOUNT_ID" VARCHAR(100),
     "NAME" VARCHAR(50),
     "TOKEN" CHAR(36),
@@ -27,4 +28,8 @@ CREATE CACHED TABLE "PUBLIC"."USER"(
 )
 
 
+```
+
+``` bash
+mvn flyway:migrate
 ```
