@@ -10,11 +10,13 @@
 [OKHttp官网](https://square.github.io/okhttp/)  
 [MySQL菜鸟教程](https://www.runoob.com/mysql/mysql-tutorial.html)  
 [H2数据库文档](https://www.h2database.com/html/quickstart.html)  
-[Spring文档2](https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/htmlsingle/#boot-features-connect-to-production-database)
+[Spring文档2](https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/htmlsingle/#boot-features-connect-to-production-database)  
+[thymeleaf](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html)
 
 ## 工具
 [ git ](https://git-scm.com/download)  
-[Flyway](https://flywaydb.org/getstarted/firststeps/maven)
+[Flyway](https://flywaydb.org/getstarted/firststeps/maven)  
+[Lombok](https://projectlombok.org/)
 
 ## 脚本
 ```sql
