@@ -42,7 +42,7 @@ public class QuestionService {
 
 
         for(Question question : questions) {
-            User user =userMapper.findById(question.getCreator());
+            User user =userMapper.selectByPrimaryKey(question.getCreator());
             QuestionDTO questionDTO = new QuestionDTO();
             //questionDTO.setId(question.getId());
             BeanUtils.copyProperties(question,questionDTO);
@@ -74,7 +74,7 @@ public class QuestionService {
 
 
         for(Question question : questions) {
-            User user =userMapper.findById(question.getCreator());
+            User user =userMapper.selectByPrimaryKey(question.getCreator());
             QuestionDTO questionDTO = new QuestionDTO();
             //questionDTO.setId(question.getId());
             BeanUtils.copyProperties(question,questionDTO);
@@ -91,8 +91,19 @@ public class QuestionService {
         Question question = questionMapper.getById(id);
         QuestionDTO questionDTO = new QuestionDTO();
         BeanUtils.copyProperties(question,questionDTO);
-        User user =userMapper.findById(question.getCreator());
+        User user =userMapper.selectByPrimaryKey(question.getCreator());
         questionDTO.setUser(user);
         return questionDTO;
+    }
+
+    public void createOrUpdate(Question question) {
+        if(question.getId() == null){
+            question.setGmtCreate(System.currentTimeMillis());
+            question.setGmtModified(question.getGmtCreate());
+            questionMapper.create(question);
+        } else {
+            question.setGmtModified(question.getGmtCreate());
+            questionMapper.update(question);
+        }
     }
 }

@@ -11,7 +11,8 @@
 [MySQL菜鸟教程](https://www.runoob.com/mysql/mysql-tutorial.html)  
 [H2数据库文档](https://www.h2database.com/html/quickstart.html)  
 [Spring文档2](https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/htmlsingle/#boot-features-connect-to-production-database)  
-[thymeleaf](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html)
+[thymeleaf](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html)  
+[Mybatis Generator](https://mybatis.org/generator/)
 
 ## 工具
 [ git ](https://git-scm.com/download)  
@@ -34,4 +35,5 @@ CREATE CACHED TABLE "PUBLIC"."USER"(
 
 ``` bash
 mvn flyway:migrate
+mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
 ```
