@@ -13,11 +13,13 @@
 [Spring文档2](https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/htmlsingle/#boot-features-connect-to-production-database)  
 [thymeleaf](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html)  
 [Mybatis Generator](https://mybatis.org/generator/)
+[JSON editor Online](https://jsoneditoronline.org/)
 
 ## 工具
 [ git ](https://git-scm.com/download)  
 [Flyway](https://flywaydb.org/getstarted/firststeps/maven)  
 [Lombok](https://projectlombok.org/)
+[POSTMAN](chrome-extension://coohjcphdfgbiolnekdpbcijmhambjff/index.html)
 
 ## 脚本
 ```sql
